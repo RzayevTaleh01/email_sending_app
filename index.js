@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init("TzRuOldyVcp8hCsU5");
+  emailjs.init("Public key");
 })();
 
 function sendMail() {
@@ -9,8 +9,8 @@ function sendMail() {
     message: document.getElementById("message").value,
   };
 
-  const serviceID = "service_9c731v9";
-  const templateID = "template_cw33va9";
+  const serviceID = "##########";
+  const templateID = "#########";
 
     emailjs.send(serviceID, templateID, params)
     .then(res=>{
